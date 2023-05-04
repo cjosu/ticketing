@@ -1,11 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata:- name: auth
+metadata:
   name: auth-depl
-spec: 
+spec:
   replicas: 1
-  selector: matchLabels:
-    app: auth
+  selector:
+    matchLabels:
+      app: auth
   template:
     metadata:
       labels:
