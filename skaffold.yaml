@@ -3,12 +3,12 @@ kind: Config
 deploy:
   kubectl:
     manifests:
-      - ./infra/k8s*
+      - ./infra/k8s/*
 build:
   local:
     push: false
   artifacts:
-    - image: colinosu/auth
+    - image: cygnetops/auth
       context: auth
       docker:
         dockerfile: Dockerfile
